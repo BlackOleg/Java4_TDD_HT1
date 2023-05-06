@@ -38,11 +38,20 @@ public class PhoneBookTest {
 
     @ParameterizedTest
     @MethodSource("parametersForAdd")
-    public void testFindByNumber(String name, int number){
+    public void testFindByNumber(String name, int number) {
         book.add(name, number);
         String actual = book.findByNumber(number);
         Assertions.assertEquals(name, actual);
-}
+    }
+
+    @ParameterizedTest
+    @MethodSource("parametersForAdd")
+    public void testFindByName(String name, int number) {
+        book.add(name, number);
+        int actual = book.findByName(name);
+        Assertions.assertEquals(number, actual);
+    }
+
     static Stream<Arguments> parametersForAdd() {
         return Stream.of(
                 arguments("Anton", 9877737)
