@@ -4,6 +4,7 @@ import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
+import org.junit.jupiter.params.provider.ValueSource;
 import ru.olegivanov.PhoneBook;
 
 import java.util.stream.Stream;
@@ -35,6 +36,13 @@ public class PhoneBookTest {
 
     }
 
+    @ParameterizedTest
+    @MethodSource("parametersForAdd")
+    public void testFindByNumber(String name, int number){
+        book.add(name, number);
+        String actual = book.findByNumber(number);
+        Assertions.assertEquals(name, actual);
+}
     static Stream<Arguments> parametersForAdd() {
         return Stream.of(
                 arguments("Anton", 9877737)
