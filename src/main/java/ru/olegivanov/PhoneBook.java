@@ -1,5 +1,6 @@
 package ru.olegivanov;
 
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -35,6 +36,17 @@ public class PhoneBook {
         return 0;
     }
     public void printAllNames(){
-        System.out.println("Printed");
+        phones.entrySet()
+                .stream()
+                .sorted(Comparator.comparing(Map.Entry::getValue))
+                .forEach(s -> System.out.println("Name: - " + s.getKey() + ", Phone: - " + s.getValue() ));
+
+
+        //System.out.println(out);
     }
+//    @Override
+//    public String toString () {
+//        return " - Category: " + ... + "; Product: " + this.name + "; has price " + this.price + "." ;;
+//    }
+
 }

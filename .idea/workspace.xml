@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9737d8fd-6cdb-49fb-abe7-d3e9624f0bf2" name="Changes" comment="findByName implemented">
+    <list default="true" id="9737d8fd-6cdb-49fb-abe7-d3e9624f0bf2" name="Changes" comment="Stub and tests for printAllNames">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/olegivanov/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/olegivanov/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/olegivanov/PhoneBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/olegivanov/PhoneBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PhoneBookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PhoneBookTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683399957966</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Stub and tests for printAllNames">
+      <created>1683401367105</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1683401367105</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -189,6 +194,7 @@
     <MESSAGE value="findByNumber implemented" />
     <MESSAGE value="Stub and tests for findByName" />
     <MESSAGE value="findByName implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="findByName implemented" />
+    <MESSAGE value="Stub and tests for printAllNames" />
+    <option name="LAST_COMMIT_MESSAGE" value="Stub and tests for printAllNames" />
   </component>
 </project>
