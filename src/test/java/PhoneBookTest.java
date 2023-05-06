@@ -7,12 +7,17 @@ import org.junit.jupiter.params.provider.MethodSource;
 import org.junit.jupiter.params.provider.ValueSource;
 import ru.olegivanov.PhoneBook;
 
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
 import java.util.stream.Stream;
 
 import static org.junit.jupiter.params.provider.Arguments.arguments;
 
 public class PhoneBookTest {
     PhoneBook book;
+    private final PrintStream standardOut = System.out;
+    private final ByteArrayOutputStream outputStreamCaptor = new ByteArrayOutputStream();
+
 
     @BeforeEach
     public void beforeEach() {
@@ -50,6 +55,18 @@ public class PhoneBookTest {
         book.add(name, number);
         int actual = book.findByName(name);
         Assertions.assertEquals(number, actual);
+    }
+
+    @ParameterizedTest
+    @MethodSource("parametersForAdd")
+    public void testPrintAllNames(String name, int number) {
+        System.setOut(new PrintStream(outputStreamCaptor));
+        book.add(name, number);
+        book.printAllNames();
+        String expected = "Name: - Anton, Phone: - 9877737";
+        Assertions.assertEquals(expected, outputStreamCaptor.toString()
+                .trim());
+        System.setOut(standardOut);
     }
 
     static Stream<Arguments> parametersForAdd() {

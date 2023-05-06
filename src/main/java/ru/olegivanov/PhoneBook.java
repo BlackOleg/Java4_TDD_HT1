@@ -34,4 +34,7 @@ public class PhoneBook {
         }
         return 0;
     }
+    public void printAllNames(){
+        System.out.println("Printed");
+    }
 }

@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9737d8fd-6cdb-49fb-abe7-d3e9624f0bf2" name="Changes" comment="Stub and tests for findByName">
+    <list default="true" id="9737d8fd-6cdb-49fb-abe7-d3e9624f0bf2" name="Changes" comment="findByName implemented">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/olegivanov/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/olegivanov/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/olegivanov/PhoneBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/olegivanov/PhoneBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PhoneBookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PhoneBookTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +45,7 @@
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.PhoneBookTest.testFindByName">
+  <component name="RunManager" selected="JUnit.PhoneBookTest.testPrintAllNames">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.olegivanov.Main" />
       <module name="Java4_TDD_HT1" />
@@ -86,11 +89,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PhoneBookTest.testPrintAllNames" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Java4_TDD_HT1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PhoneBookTest" />
+      <option name="METHOD_NAME" value="testPrintAllNames(java.lang.String,int)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PhoneBookTest.testPrintAllNames" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.PhoneBookTest.testFindByName" />
         <item itemvalue="JUnit.PhoneBookTest.testFindByNumber" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.PhoneBookTest.testAdd" />
       </list>
     </recent_temporary>
@@ -146,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683399838922</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="findByName implemented">
+      <created>1683399957966</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1683399957966</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -167,6 +188,7 @@
     <MESSAGE value="Stub and tests for findByNumber" />
     <MESSAGE value="findByNumber implemented" />
     <MESSAGE value="Stub and tests for findByName" />
-    <option name="LAST_COMMIT_MESSAGE" value="Stub and tests for findByName" />
+    <MESSAGE value="findByName implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="findByName implemented" />
   </component>
 </project>
